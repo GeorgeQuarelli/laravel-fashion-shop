@@ -7,7 +7,7 @@ use App\Cloth;
 
 class ClothController extends Controller
 {
-    public function index(){
+    public function index() {
         $all_clothes = Cloth::all();
         dd($all_clothes);
     }
