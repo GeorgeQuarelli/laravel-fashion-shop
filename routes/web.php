@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('clothes');
+})->name('homepage');
+
 Route::get('/', 'ClothController@index');
