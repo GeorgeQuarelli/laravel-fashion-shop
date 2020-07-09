@@ -9,6 +9,9 @@ class ClothController extends Controller
 {
     public function index() {
         $all_clothes = Cloth::all();
-        return('view', compact('all_clothes'));
+        $data = [
+            'clothes' => $all_clothes
+        ];
+        return view('clothes', ['clothes' => $all_clothes]);
     }
 }
